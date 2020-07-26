@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BaseFrame</string>
+    <string name="tag_global">globaltag</string>
+</resources>

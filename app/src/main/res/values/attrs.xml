@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <!--加减器的自定义样式 -->
+    <declare-styleable name="BSNumberPicker">
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="current_number" format="integer" />
+    </declare-styleable>
+
+    <!--自定义标题栏样式-->
+    <declare-styleable name="TopBar">
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+
+        <attr name="leftBtnBackground" format="reference|color" />
+        <attr name="leftBtnText" format="string" />
+        <attr name="rightBtnBackground" format="reference|color" />
+        <attr name="rightBtnText" format="string" />
+
+
+    </declare-styleable>
+
+</resources>

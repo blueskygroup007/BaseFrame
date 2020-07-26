@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <!--带toolbar的activity的主题-->
+    <style name="AppTheme.Toolbar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Splash的全屏白色主题-->
+    <style name="SplashPageTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--AS创建全屏Activity时创建的主题-->
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    <!--AS创建全屏Activity时创建的主题-->
+
+    <!--自定义Dialog的动画-->
+    <style name="pop_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+
+    </style>
+
+    <!--自定义Dialog的主题-->
+    <style name="dialog_custom" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <!--底部标签栏按钮样式-->
+    <style name="MaterialBottomNavBottonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:textSize">
+            @dimen/material_bottom_nav_bar_fixed_action_active_label_text_size
+        </item>
+        <!--这个选项不是将图片资源放在上方,而是listview的属性-->
+        <!--<item name="android:drawSelectorOnTop">true</item>-->
+        <!--颜色又是一个选择器-->
+        <item name="android:textColor">@drawable/main_radio_button_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--倒班设置中，标题文本的样式-->
+    <style name="CaptionSolutionEdit">
+
+    </style>
+
+
+    <!--三个TimePicker的主题样式**************************************************-->
+    <!--todo 知识点:学习这种style的设置方法.-->
+    <style name="Theme.TimePicker" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:editTextStyle">@style/Widget.AppCompat.EditText.Gray</item>
+    </style>
+
+    <style name="Widget.AppCompat.EditText.Gray">
+        <item name="android:textSize">@dimen/font_title</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+
+</resources>
